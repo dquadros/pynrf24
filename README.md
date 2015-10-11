@@ -16,6 +16,24 @@ Should work without problems with NRF24L01 (non +) radios.
 Do not forget to check this [great tutorial](http://www.diyembedded.com/tutorials/nrf24l01_0/nrf24l01_tutorial_0.pdf)
 or the [original datasheet](http://www.nordicsemi.com/eng/Products/2.4GHz-RF/nRF24L01)
 
+My (dquadros) fork
+------------------
+
+My goals with this fork are:
+
+* Fix bugs
+* Make defaults more compatible with the current RF24 (https://github.com/TMRh20/RF24)
+* Improve documentation
+
+Some of the changes are more related to my personal tastes in coding:
+
+* Use bit masks instead of bit numbers (e.g. 0x20 instead of 5)
+* Move initializations close to use
+
+My main test environment is a Raspberry Pi model B+, comunicating with an Arduino. Later on I will test on other Raspberry Pi models
+(B, 2) and (someday) on the Beaglebone Black.
+
+This is a work in progress. Bugs should be expected.
 
 Contact
 -------
